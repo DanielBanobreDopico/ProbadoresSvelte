@@ -1,3 +1,0 @@
-<script></script>
-
-<h1>Esta es la cabecera</h1>
