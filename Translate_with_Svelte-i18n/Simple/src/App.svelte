@@ -4,7 +4,7 @@
 
 	const translations = {
 		es: {
-			title: 'Bienvenido a mi sitio.',
+
 			presentation: 'Este es un sitio para introducirse en la "localización" de aplicaciones.',
 			reference: 'Referencias'
 		},
