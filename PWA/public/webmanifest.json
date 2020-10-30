@@ -1,0 +1,17 @@
+{
+    "__reference__": "https://developer.mozilla.org/es/docs/Web/Progressive_web_apps/Installable_PWAs",
+    "name": "Test Svelte Progressive Web App",
+    "short_name": "SveltePWA",
+    "description": "Trying turning Svelte projectc into PWA",
+    "icons": [
+        {
+           "src": "fabicon.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "theme_color": "#B12A34",
+    "background_color": "#B12A34"
+}
