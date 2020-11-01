@@ -1,28 +1,24 @@
-var cacheName = 'js13kPWA-v1';
-var appShellFiles = [
-    '/',
-    '/favico.png',
-    '/global.css',
-    '/index.html',
-    '/runWorker.js',
-    '/sw.js',
-    '/webmanifest.json',
-    '/build/',
-    '/build/bundle.css',
-    '/build/bundle.js'
+var cacheName = 'SveltePWA-v1';
+var contentToCache = [
+    './',
+    'favicon.svg',
+    'apple-touch-icon.png',
+    'global.css',
+    'index.html',
+    'runWorker.js',
+    'sw.js',
+    'webmanifest.json',
+    'build/bundle.css',
+    'build/bundle.js'
 ];
-var gamesImages = [];
-for(var i=0; i<games.length; i++) {
-  gamesImages.push('data/img/'+games[i].slug+'.jpg');
-}
-var contentToCache = appShellFiles.concat(gamesImages);
+
 
 // Installing Service Worker
 self.addEventListener('install', function(e) {
   console.log('[Service Worker] Install');
   e.waitUntil(
     caches.open(cacheName).then(function(cache) {
-      console.log('[Service Worker] Caching all: app shell and content');
+      console.log('[Service Worker] Caching...');
       return cache.addAll(contentToCache);
     })
   );

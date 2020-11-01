@@ -6,18 +6,19 @@
 
 	<title>Svelte app</title>
 
-	<link rel='icon' type='image/png' href='/favicon.png'>
-	<link rel='stylesheet' href='/global.css'>
-	<link rel='stylesheet' href='/build/bundle.css'>
+	<link rel='icon' type='image/svg+xml' href='favicon.svg'>
+	<link rel='stylesheet' href='global.css'>
+	<link rel='stylesheet' href='build/bundle.css'>
 
 	<!--
 		Linking manifest file makes app installable
 		Referencia: https://developer.mozilla.org/es/docs/Web/Progressive_web_apps/Installable_PWAs
 	-->
-	<link rel='manifest' href='/webmanifest.json'>
+	<link rel='manifest' href='webmanifest.json'>
+	<link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
 
-	<script defer src='/build/bundle.js'></script>
-	<script defer src='/runWorker.js'></script>
+	<script defer src='runWorker.js'></script>
+	<script defer src='build/bundle.js'></script>
 </head>
 
 <body>

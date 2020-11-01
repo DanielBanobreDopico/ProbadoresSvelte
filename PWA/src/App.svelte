@@ -1,30 +1,22 @@
 <script>
-	export let name;
+	async function getNotifications () {
+		const result = await Notification.requestPermission();
+		console.log('Notification permission request', result);
+		if (result === 'granted') {
+			const title = 'First notification'
+			const options = {
+				body: 'You can get notifications now.',
+				icon: 'favicon.svg'
+			}
+			new Notification(title, options);
+		}
+	};
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h1>Svelte PWA example</h1>
+	<button on:click={getNotifications}>Get notifications</button>
 </main>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
 </style>
