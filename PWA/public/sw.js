@@ -1,8 +1,7 @@
 var cacheName = 'SveltePWA-v1';
 var contentToCache = [
     './',
-    'favicon.svg',
-    'apple-touch-icon.png',
+    'favicon.png',
     'global.css',
     'index.html',
     'runWorker.js',
