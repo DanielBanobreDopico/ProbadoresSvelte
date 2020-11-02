@@ -6,7 +6,7 @@
 			const title = 'First notification'
 			const options = {
 				body: 'You can get notifications now.',
-				icon: 'favicon.svg'
+				icon: 'favicon.png'
 			}
 			new Notification(title, options);
 		}
