@@ -1,12 +1,15 @@
 <script>
-	import Wellcome from './Wellcome.svelte';
+	import Welcome from './Welcome.svelte';
 	import Warning from './Warning.svelte';
 </script>
 
 <main>
-	<Wellcome/>
+	<Welcome/>
 	<Warning>
 		<p>Cuidado que mancha</p>
+	</Warning>
+
+	<Warning>
 	</Warning>
 </main>
 

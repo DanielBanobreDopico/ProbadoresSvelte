@@ -2,7 +2,7 @@
 
 <div>
     <img alt='alert' src='./imgs/alert.svg'>
-    <slot></slot>
+    <slot>Pon aquí tu advertencia</slot>
 </div>
 
 <style>
