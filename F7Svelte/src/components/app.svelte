@@ -4,7 +4,7 @@
   <Panel left cover themeDark>
     <View>
       <Page>
-        <Navbar title="Left Panel"/>
+        <Navbar title="Mira que cosas"/>
         <Block>Left panel content goes here</Block>
       </Page>
     </View>
